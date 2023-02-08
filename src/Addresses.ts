@@ -1,12 +1,18 @@
 import {Chains} from './Chains';
 
+/*
+DXBL 
+  CommunityVault 
+  Dexible 
+
+  */
 export const Addresses = {
     Dexible: {
         [Chains.Arbitrum]: "0x0",
         [Chains.Avalanche]: "0x0",
         [Chains.BSC]: "0x0",
-        [Chains.EthereumMainnet]: "0x906B067e392e2c5f9E4f101f36C0b8CdA4885EBf",
-        [Chains.Goerli]: "0x0",
+        [Chains.EthereumMainnet]: "0x0",
+        [Chains.Goerli]: "0x7F0c09Bc239ac599C8F81420479cBDe1eD08d663",
         [Chains.Optimism]: "0x0",
         [Chains.Polygon]: "0x0"
     },
@@ -14,8 +20,8 @@ export const Addresses = {
         [Chains.Arbitrum]: "0x0",
         [Chains.Avalanche]: "0x0",
         [Chains.BSC]: "0x0",
-        [Chains.EthereumMainnet]: "0xD1760AA0FCD9e64bA4ea43399Ad789CFd63C7809",
-        [Chains.Goerli]: "0x0",
+        [Chains.EthereumMainnet]: "0x0",
+        [Chains.Goerli]: "0x2173606fbb081aF9c22B9282160c3b46c7F818e4",
         [Chains.Optimism]: "0x0",
         [Chains.Polygon]: "0x0"
     },
@@ -23,8 +29,8 @@ export const Addresses = {
         [Chains.Arbitrum]: "0x0",
         [Chains.Avalanche]: "0x0",
         [Chains.BSC]: "0x0",
-        [Chains.EthereumMainnet]: "0xAe9Ed85dE2670e3112590a2BB17b7283ddF44d9c",
-        [Chains.Goerli]: "0x0",
+        [Chains.EthereumMainnet]: "",
+        [Chains.Goerli]: "0xAe654fCCFDfd4bF3A843BE5dEf8d49ee659bBDbF",
         [Chains.Optimism]: "0x0",
         [Chains.Polygon]: "0x0"
     }

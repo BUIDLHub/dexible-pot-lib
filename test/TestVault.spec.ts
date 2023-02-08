@@ -26,7 +26,7 @@ describe("TestVault", function() {
         const con = new CommunityVault({
             provider
         });
-        const rate = await con.currentMintRateUSD(16586626);
+        const rate = await con.currentMintRateUSD();
         console.log("Mint rate", rate);
     });
 })
