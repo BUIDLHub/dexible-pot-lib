@@ -1,0 +1,23 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "ts-node": {
+    // required for mocha's ts-node/register hook to properly
+    // handle custom typings included in the @types directory.
+    // see: https://stackoverflow.com/a/57364906
+    "files": true
+  }
+}
