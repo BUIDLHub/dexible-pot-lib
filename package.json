@@ -14,7 +14,7 @@
     "clean": "rimraf dist",
     "build": "yarn clean; tsc",
     "test": "jest",
-    "do_publish": "npm publish"
+    "do_publish": "npm publish --access=public"
   },
   "dependencies": {
     "@ethersproject/abi": "^5.7.0",
