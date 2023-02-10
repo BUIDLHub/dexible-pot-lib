@@ -7,7 +7,7 @@ export const Addresses = {
         [Chains.BSC]: "0x0",
         [Chains.EthereumMainnet]: "0x0",
         [Chains.Fantom]: "0x0",
-        [Chains.Goerli]: "0x53f416f782Ded95285C179F6cEEcA80324Bf4Cf7",
+        [Chains.Goerli]: "0x305e402685d325f9d358cf1100febac7736355cf",
         [Chains.Optimism]: "0x0",
         [Chains.Polygon]: "0x0"
     },
