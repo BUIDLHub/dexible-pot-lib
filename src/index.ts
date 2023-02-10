@@ -1,4 +1,3 @@
 
-export * from './Dexible';
-export * from './DXBL';
-export * from './CommunityVault';
+export * from './utils/ContractFactory';
+export * from './wrappers';

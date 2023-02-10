@@ -1,8 +1,9 @@
-import VaultABI from './abis/CommunityVault.abi.json';
+import VaultABI from '../abis/CommunityVault.abi.json';
 import { BaseContract } from './BaseContract';
 import {BigNumber, ethers, Transaction} from 'ethers';
 
 export interface VaultProps {
+    address: string;
     provider: ethers.providers.Provider;
 }
 

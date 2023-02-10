@@ -1,5 +1,6 @@
 import {ethers} from 'ethers';
-import {Dexible} from '../src/Dexible';
+import { ContractFactory } from '../src';
+import {Dexible} from '../src/wrappers/Dexible';
 require("dotenv").config();
 
 describe("TestDexible", function() {
@@ -15,10 +16,7 @@ describe("TestDexible", function() {
     });
 
     it("Should query dexible for details", async () => {
-        
-        const con = new Dexible({
-            provider
-        });
+        const con = await ContractFactory.getDexible(provider);
         console.log("Vault: ", await con.communityVault());
 
     });

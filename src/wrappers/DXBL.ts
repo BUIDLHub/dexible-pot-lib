@@ -1,4 +1,4 @@
-import DXBLABI from './abis/DXBL.abi.json';
+import DXBLABI from '../abis/DXBL.abi.json';
 import {BigNumber, ethers} from 'ethers';
 import { BaseContract } from './BaseContract';
 
@@ -30,5 +30,9 @@ export class DXBL extends BaseContract {
 
     async symbol(): Promise<string> {
         return await this._callContract("symbol", []);
+    }
+
+    async comunityVault(): Promise<string> {
+        return await this._callContract('minter', []);
     }
 }

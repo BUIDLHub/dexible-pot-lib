@@ -1,9 +1,10 @@
-import DexibleABI from './abis/Dexible.abi.json';
+import DexibleABI from '../abis/Dexible.abi.json';
 import {ethers} from 'ethers';
 import { BaseContract } from './BaseContract';
 
 
 export interface DexibleProps {
+    address: string;
     provider: ethers.providers.Provider;
 }
 

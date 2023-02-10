@@ -1,7 +1,7 @@
 #!/bin/sh
 
-VERSION="1.0.1"
+VERSION="1.0.2"
 
 yarn version --new-version $VERSION;
 yarn run build;
-yarn run do_publish;
+npm publish --access=public;
