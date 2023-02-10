@@ -1,6 +1,6 @@
 import VaultABI from './abis/CommunityVault.abi.json';
 import { BaseContract } from './BaseContract';
-import {BigNumber, ethers} from 'ethers';
+import {BigNumber, ethers, Transaction} from 'ethers';
 
 export interface VaultProps {
     provider: ethers.providers.Provider;
@@ -11,6 +11,14 @@ export interface AssetInfo {
     balance: BigNumber;
     usdValue: number;
     usdPrice: number;
+}
+
+export interface RedeemRequest {
+    signer: ethers.Signer;
+    feeToken: string;
+    dxblAmount: BigNumber;
+    minOutput: BigNumber;
+    unwrapNative: boolean;
 }
 
 export class CommunityVault extends BaseContract {
@@ -110,5 +118,12 @@ export class CommunityVault extends BaseContract {
         const usd = await this._callContract('currentMintRateUSD', [],block);
         return +this.inDecs(usd, 6);
     }
-    
+
+    /**
+     * Modification functions
+     */
+    redeemDXBL(request: RedeemRequest): Promise<Transaction> {
+        const con = this.contract.connect(request.signer);
+        return con.redeemDXBL(request.feeToken, request.dxblAmount, request.minOutput, request.unwrapNative);
+    }
 }
