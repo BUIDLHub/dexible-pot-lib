@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "description": "Library to interact with Dexible Proof of Trade conrtracts",
   "main": "dist/index.js",
-  "repository": "https://github.com/buidlhub/dexible-pot-lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buidlhub/dexible-pot-lib.git"
+  },
   "author": "support@buidlhub.com",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "clean": "rimraf dist",
     "build": "yarn clean; tsc",
-    "test": "jest"
+    "test": "jest",
+    "do_publish": "npm publish"
   },
   "dependencies": {
     "@ethersproject/abi": "^5.7.0",
@@ -74,5 +78,17 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/buidlhub/dexible-pot-lib/issues"
+  },
+  "homepage": "https://github.com/buidlhub/dexible-pot-lib#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "dexible",
+    "proof-of-trade",
+    "dxbl"
+  ]
 }
