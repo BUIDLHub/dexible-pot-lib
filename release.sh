@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION="1.0.2"
+VERSION="1.0.3"
 
 yarn version --new-version $VERSION;
 yarn run build;
