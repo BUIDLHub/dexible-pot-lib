@@ -2,7 +2,7 @@ import {Chains} from './Chains';
 
 export const Addresses = {
     DXBL: {
-        [Chains.Arbitrum]: "0x8e29d82f03d545b8fab2d5eb2c4a1ed370246960",
+        [Chains.Arbitrum]: "0xcb5973f90d581d03296161fd3a92727ac4d74807",
         [Chains.Avalanche]: "0x0",
         [Chains.BSC]: "0x0",
         [Chains.EthereumMainnet]: "0x0",
