@@ -100,7 +100,7 @@ export class CommunityVault extends BaseContract {
 
     async currentNavUSD(block?: number): Promise<number> {
         const usd = await this._callContract('currentNavUSD', [],block);
-        return +this.inDecs(usd);
+        return +this.inDecs(usd, 6);
     }
 
     async assets(block?: number): Promise<AssetInfo[]> {
