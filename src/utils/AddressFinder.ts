@@ -3,8 +3,7 @@ import { CommunityVault } from "../wrappers/CommunityVault";
 import { DXBL } from "../wrappers/DXBL";
 import { AddressCache, IDataRetreiver } from "./AddressCache";
 
-//5min TTL on cached addresses to make sure contract upgrades don't wreak havoc
-const TTL = 5*60*1000;
+const TTL = 86400000;
 export class AddressFinder {
     cache: AddressCache = new AddressCache(TTL);
     token: DXBL;
