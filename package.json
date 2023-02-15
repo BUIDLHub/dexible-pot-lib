@@ -1,6 +1,6 @@
 {
   "name": "dexible-pot-lib",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Library to interact with Dexible Proof of Trade conrtracts",
   "main": "dist/index.js",
   "repository": {
